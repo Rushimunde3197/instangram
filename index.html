@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+        }
+
+        .container {
+            border: solid thin rgb(148, 160, 148);
+            box-shadow: ;
+            position: absolute;
+            padding: 20px;
+            inset: 50% auto auto 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .brand {
+            display: flex;
+            justify-content: center;
+        }
+
+        .brand>img {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        input {
+            padding: 5px;
+            outline: none;
+            border: solid thin #222;
+            border-radius: 5px;
+        }
+
+        input:focus,
+        input:not(:focus) {
+            font-size: 10px;
+            color: rebeccapurple;
+        }
+
+        input::placeholder {
+            font-size: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            outline: none;
+            border: none;
+            padding: 5px;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        .line {
+            font-size: 12px;
+            margin-top: 10px;
+            position: relative;
+            color: #747474;
+            text-align: center;
+        }
+
+        .line::before {
+            content: "";
+            width: 40%;
+            height: 1px;
+            background-color: #747474;
+            position: absolute;
+            inset: 7px auto auto 0;
+        }
+
+        .line::after {
+            content: "";
+            width: 40%;
+            height: 1px;
+            background-color: #747474;
+            position: absolute;
+            right: 0;
+            top: 7px;
+        }
+
+        a {
+            display: flex;
+            gap: 10px;
+            font-size: 10px;
+            text-decoration: none;
+        }
+
+        .fa-facebook-square {
+            color: blue;
+        }
+
+        .feedback {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            justify-content: center;
+            padding: 2px;
+            margin-top: 15px;
+        }
+
+        .container>p {
+            margin-top: 20px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brand">
+            <img src="new folder/instagram logo 2.jfif" alt="">
+        </div>
+        <form action="">
+            <input type="text" placeholder="Username" name="" id="">
+            <input type="text" name="" id="" placeholder="Password">
+            <input type="submit" value="log in">
+        </form>
+        <div class="line">OR</div>
+        <div class="feedback">
+            <a href="">
+                <i class="fa fa-facebook-square"></i>
+                Log in with facebook
+            </a>
+            <a href="">Forget password ?</a>
+        </div>
+        <p>Don't have an account? <a href="">Sign up</a></p>
+    </div>
+</body>
+
+</html>
